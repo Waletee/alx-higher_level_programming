@@ -5,7 +5,7 @@ def uppercase(str):
             continue
         elif ord(i) not in range(65, 91):
             if ord(i) in range(97, 123):
-                char = ord(i) - 30
+                char = ord(i) - 34
             else:
                 char = ord(i)
             print("{}".format(chr(char)), end="")
