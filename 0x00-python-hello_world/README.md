@@ -1,2 +1,2 @@
-Python - Hello World
-python programming first lesson
+Python - Hello World.
+Python programming first lesson
