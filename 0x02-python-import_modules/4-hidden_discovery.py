@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-import sys
-import hidden_4 as hide
 
-if __name__ != "__main__":
-    exit()
+if __name__ == "__main__":
+    import hidden_4
 
-for z in dir(hide):
-    if z[0:2] != "__":
-        print(z)
+    names = dir(hidden_4)
+    for name in names:
+        if name[:2] != "__":
+            print(name)

@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-import sys
+
 if __name__ == "__main__":
-    size = len(sys.argv)
+    
+    import sys
+
     sum = 0
-    if size > 1:
-        for z in range(1, size):
-            sum += int(sys.argv[z])
+    for i in range(len(sys.argv) - 1):
+        sum += int(sys.argv[i + 1])
     print("{}".format(sum))
