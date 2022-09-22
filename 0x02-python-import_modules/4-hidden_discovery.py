@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    from hidden_4 import *
-    arr = dir()
-    for i in range(0, len(arr)):
-        if arr[i][0:2] != "__":
-            print("{}".format(arr[i]))
+import sys
+import hidden_4 as hide
+
+if __name__ != "__main__":
+    exit()
+
+for z in dir(hide):
+    if z[0:2] != "__":
+        print(z)
