@@ -20,6 +20,6 @@ def list_division(my_list_1, my_list_2, list_length):
             print("out of range")
             div_elm = 0
         finally:
+            pass
             new_list.append(div_elm)
     return new_list
-    
