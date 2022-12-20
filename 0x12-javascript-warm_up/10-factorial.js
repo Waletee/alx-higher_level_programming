@@ -1,12 +1,13 @@
 #!/usr/bin/node
-
-const num = parseInt(process.argv[2]);
-console.log(factorial(num));
-
-function factorial (n) {
-  if (!n) {
-    return 1;
+function Factorial (number) {
+  const holder = Number(number);
+  if (!holder) {
+    return (1);
+  } else if (holder === 1) {
+    return (1);
+  } else {
+    return (Factorial(holder - 1) * holder);
   }
-
-  return n * factorial(n - 1);
 }
+
+console.log(Factorial(process.argv[2]));
